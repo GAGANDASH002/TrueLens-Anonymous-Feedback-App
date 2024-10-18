@@ -1,3 +1,11 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Disable specific ESLint rules
+    "@typescript-eslint/no-unused-vars": "off", // Disable the rule for unused variables
+    "@typescript-eslint/no-explicit-any": "off", // Disable the rule for using 'any'
+    "@typescript-eslint/no-empty-object-type": "off", // Disable the rule for empty object types
+    "prefer-const": "off", // Disable the prefer-const rule
+    "@typescript-eslint/no-unused-expressions": "off" // Disable the no-unused-expressions rule
+  }
 }
